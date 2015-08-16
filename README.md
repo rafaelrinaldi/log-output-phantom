@@ -14,7 +14,8 @@ $ npm install log-output-phantom --save
 var logOutput = require('log-output');
 var phantomAdapter = require('log-output-phantom');
 
-logOutput('yay', phantomAdapter()); // yay
+logOutput.adapter(phantomAdapter());
+logOutput('yay'); // yay
 ```
 
 ## License
